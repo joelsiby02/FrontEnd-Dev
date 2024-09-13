@@ -1,0 +1,157 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'poppins', sans-serif; /* use poppins as custom if not sans-serif */
+
+}
+
+body{
+    background: #efefef;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1876f2;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+
+
+/* left icons should be in the same line as logo */
+
+.nav-left, .nav-right{
+    display: flex;
+    justify-content: center;
+}
+
+/* left nav list */
+
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-left ul li img{
+    width: 28px;
+    margin : 0 15px;
+}
+
+/* reducing user icon size */
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-box {
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 0 15px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.search-box img {
+    width: 18px;
+    margin-right: 10px; /* Add space between the icon and input field */
+}
+
+.search-box input {
+    flex: 1; /* Allows the input field to take up remaining space */
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 16px; /* Optional: Adjust font size for better visibility */
+}
+
+
+.nav-user-icon {
+    margin-left: 30px;
+}
+
+.on-off{
+    position: relative;
+}
+.nav-user-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px; 
+    height: 10px;
+    background-color: green;
+    border: 2px solid white; /* Creates a border to separate the dot from the image */
+    border-radius: 50%;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-container{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70%;
+    align-self: flex-start;
+}
+.right-container{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70%;
+    align-self: flex-start;
+}
+
+.main-content{
+    flex-basis: 47%;
+
+}
+
+.imp-links a , .shortcut-container a {
+    text-decoration: none;       /* Removes the underline from the links */
+    display: flex;               /* Uses flexbox layout to align items */
+    align-items: center;         /* Centers items vertically */
+    margin-bottom: 30px;         /* Adds space below each link */
+    color: #626262;              /* Sets the text color */
+    width: fit-content;          /* Adjusts the width to fit the content */
+}
+
+.imp-links a img {      
+    width: 25px;
+    margin-right: 15px;
+}
+
+.imp-links a:last-child{
+    cursor: pointer;
+    color: #1876f2;
+}
+
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-container img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.shortcut-container p{
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500
+}
