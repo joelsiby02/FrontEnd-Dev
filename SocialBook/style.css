@@ -266,3 +266,133 @@ nav {
 
 
 
+/* Middle container */
+
+.story {
+    width: 18%; /* Reduces the width to allow 5 stories to fit */
+    padding-top: 32%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.story-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+.story img {
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;  /* Ensures the image remains circular */
+    top: 10px;
+    left: 10px;
+    border: 5px solid #1876f2;  /* Adds a dark blue border */
+}
+
+
+.story p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.story1{
+    background: url(images/status-1.png) center/cover, linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.story2{
+    background: url(images/status-2.png) center/cover, linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.story3{
+    background: url(images/status-3.png) center/cover, linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.story4{
+    background: url(images/status-4.png) center/cover, linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.story5{
+    background: url(images/status-5.png) center/cover, linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.story .story1 img {
+    position: absolute;  /* Ensures the image is positioned relative to the parent */
+    left: 50%;            /* Horizontally centers the image */
+    bottom: 40px;         /* Positions the image 40px from the bottom */
+    transform: translateX(-50%);  /* Centers the image by adjusting the X-axis */
+    border: 0;
+    width: 35px;          /* Adjusts the image width */
+}
+
+.write-post-container{
+    width: auto;
+    background: #fff;
+    border-radius:6px;
+    padding: 20px;
+    columns: #626262;
+}
+
+
+.user-profile{
+    display: flex;
+    align-items: center;
+
+}
+
+/* post mid img  */
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p{
+    margin-bottom:-5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile small{
+    font-size: 12px;
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.add-post-links a{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.add-post-links img{
+    width: 20px;
+    margin-right: 10px;
+}
